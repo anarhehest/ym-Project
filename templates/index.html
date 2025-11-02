@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Radio Project Random</title>
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<button id="themeToggle" class="theme-toggle" aria-pressed="false">Dark</button>
+<main class="center-wrap">
+    <section class="player-card" role="group" aria-label="Player" aria-live="polite">
+        <div class="meta">
+            <div id="title" class="title">—</div>
+            <div id="artist" class="artist">—</div>
+        </div>
+
+        <div class="cover-wrap">
+            <img id="cover" class="cover" alt="Album cover" width="512" height="512"/>
+        </div>
+
+        <div class="player-controls">
+            <audio id="player" src="/stream" autoplay controls crossorigin="anonymous"></audio>
+        </div>
+    </section>
+</main>
+
+<script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+<script src="{{ url_for('static', filename='js/meta.js') }}"></script>
+</body>
+</html>
