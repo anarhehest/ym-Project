@@ -6,6 +6,8 @@
 Включает интеграцию с [yandex_music](https://pypi.org/project/yandex-music/) и 
 минимальный фронтенд для показа обложки и метаданных.
 
+<img width="1533" height="1036" alt="Screenshot 2025-11-02 at 17 42 45" src="https://github.com/user-attachments/assets/659993f4-62b2-49a5-8c79-b10973e2ed6d" />
+
 ## Использование
 Клонируйте репозиторий:
 ```bash
